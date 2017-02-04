@@ -17,6 +17,6 @@ User.sync({ force: true })
 
 app.get('/users',function(req,res){
   // console.log(User)
-  res.send(User)
+  res.send(JSON.stringify(User))
 })
   

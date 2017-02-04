@@ -70,11 +70,11 @@ angular.module('app', ['ngRoute'])
 
 .controller('fozzbazzCtrl', function($scope,another){
   $scope.display = 0;
-  $scope.count = 0;
+  $scope.inc = 0;
   
   $scope.increment2 = function(){
-    $scope.count++;
-    $scope.display = another.fizzz($scope.count);
+    $scope.inc++;
+    $scope.display = another.fizzz($scope.inc);
   }
 }); 
 
